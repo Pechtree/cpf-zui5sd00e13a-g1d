@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget 
+	xmlns:gap="http://phonegap.com/ns/1.0"
+    id="th.co.peachtree.zm013acpf.dv6" 
+    version="2.01"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+  <name>
+   	iLaunch DV6
+  </name>
+
+  <description>
+    CP Internet Launcher DV6
+  </description>
+
+  <author email="chestha@peachtree.co.th" href="http://www.peachtree.co.th">
+    Chestha Rangkarasamee
+  </author>
+
+	<icon src="cp.png" />
+
+    <icon src="www/img/psd_72x72.png"   		platform="ios" width="72" height="72" />
+    <icon src="www/img/psd_76x76.png"   		platform="ios" width="76" height="76" />
+    <icon src="www/img/psd_120x120.png" 		platform="ios" width="120" height="120" />
+    <icon src="www/img/psd_152x152.png" 		platform="ios" width="152" height="152" />
+    <icon src="www/img/psd_180x180.png" 		platform="ios" width="180" height="180" />
+    
+    <splash src="www/img/psd_320x480.png"   	platform="ios" width="320"  height="480" />
+  	<splash src="www/img/psd_640x960.png"   	platform="ios" width="640"  height="960" />
+  	<splash src="www/img/psd_640x1136.png"  	platform="ios" width="640"  height="1136" />
+  	<splash src="www/img/psd_750x1334.png"  	platform="ios" width="750"  height="1334" />
+  	<splash src="www/img/psd_1242x2208.png" 	platform="ios" width="1242" height="2208" />
+  	<splash src="www/img/psd_2208x1242.png" 	platform="ios" width="2208" height="1242" />
+  	<splash src="www/img/psd_768x1024.png"  	platform="ios" width="768"  height="1024" />
+  	<splash src="www/img/psd_1024x768.png"  	platform="ios" width="1024" height="768" />
+  	<splash src="www/img/psd_1536x2048.png" 	platform="ios" width="1536" height="2048" />
+  	<splash src="www/img/psd_2048x1536.png" 	platform="ios" width="2048" height="1536" />
+  	
+	<icon src="www/img/psd_48x48.png" 			platform="android" density="mdpi" />
+	<icon src="www/img/psd_72x72.png" 			platform="android" density="hdpi" />
+	<icon src="www/img/psd_96x96.png" 			platform="android" density="xhdpi" />
+	<icon src="www/img/psd_144x144.png" 		platform="android" density="xxhdpi" />
+	<icon src="www/img/psd_192x192.png" 		platform="android" density="xxxhdpi" />
+
+	<splash src="www/img/psd_200x320.png" 	platform="android" density="ldpi" />
+	<splash src="www/img/psd_320x480.png" 	platform="android" density="mdpi" />
+	<splash src="www/img/psd_480x800.png" 	platform="android" density="hdpi" />
+	<splash src="www/img/psd_720x1280.png" 	platform="android" density="xhdpi" />
+	<splash src="www/img/psd_960x1600.png" 	platform="android" density="port-xxhdpi" />
+	<splash src="www/img/psd_1600x960.png" 	platform="android" density="land-xxhdpi" />
+    
+    <!-- <preference name="SplashMaintainAspectRatio" platform="android" value="true" /> -->
+
+    <!-- Core plugins -->
+    <plugin name="cordova-plugin-battery-status" />
+    <plugin name="cordova-plugin-camera" spec="2.4.1" />
+    <plugin name="cordova-plugin-media-capture" spec="1.4.3" />
+    <plugin name="cordova-plugin-console" />
+    <plugin name="cordova-plugin-contacts" />
+    <plugin name="cordova-plugin-device" spec="1.1.7" />
+    <plugin name="cordova-plugin-device-motion" />
+    <plugin name="cordova-plugin-device-orientation" />
+    <plugin name="cordova-plugin-dialogs" />
+    <plugin name="cordova-plugin-file" spec="4.3.3" />
+    <plugin name="cordova-plugin-file-transfer"  spec="1.6.3" />
+    <plugin name="cordova-plugin-geolocation" spec="2.4.3"  />
+    <plugin name="cordova-plugin-globalization" />
+    <plugin name="cordova-plugin-inappbrowser"  spec="1.7.2"  />
+    <plugin name="cordova-plugin-media"  spec="3.0.1" />
+    <plugin name="cordova-plugin-network-information" spec="1.3.4"  />
+    <plugin name="cordova-plugin-splashscreen" />
+    <plugin name="cordova-plugin-vibration" />
+    <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
+    
+
+
+     <!-- Third party plugins -->
+    <plugin name="cordova-plugin-buildinfo" />
+    <plugin name="cordova-plugin-sim" />
+    <plugin name="cordova-plugin-device-name" 	spec="1.3.0" />
+	<plugin name="cordova-plugin-uniquedeviceid" 								 />
+	<plugin name="cordova-plugin-bluetooth-serial" 								 />
+    <plugin name="phonegap-plugin-barcodescanner" spec="8.1.0" >
+        <param name="CAMERA_USAGE_DESCRIPTION" value="Scan QR Codes" />
+    </plugin>
+	
+    <!-- CLI -->
+    <preference name="pgb-builder-version" value="2" />
+	<preference name="phonegap-version" value="cli-9.0.0" />
+	<plugin name="cordova-android-support-gradle-release" />
+    
+    <!-- Platform -->
+    <platform name="android">
+        <plugin name="cordova-plugin-cache" />
+	</platform>
+    
+	<preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
+	<preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
+	<!-- <preference name="phonegap-version" value="cli-7.1.0" /> -->
+
+	<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+		<string>need camera access to take pictures</string>
+	</edit-config>
+	<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+		<string>need to photo library access to get pictures from there</string>
+	</edit-config>
+	<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+		<string>need location access to find things nearby</string>
+	</edit-config>
+	<edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
+		<string>need to photo library access to save pictures there</string>
+	</edit-config>
+
+	<access origin="*" />
+    <access origin="https://hanatrial.ondemand.com/*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+</widget>

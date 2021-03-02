@@ -1,0 +1,21 @@
+<core:FragmentDefinition
+        xmlns="sap.ushell.ui.shell" xmlns:core="sap.ui.core">
+
+    <ShellHeader
+            id="shell-header"
+            showLogo="{/showLogo}"
+            visible="{/headerVisible}"
+            showSeparators="false"
+            headItems="{path: '/headItems', factory: '.shellUpdateAggItem'}"
+            headEndItems="{path: '/headEndItems', factory: '.shellUpdateAggItem', filters: [{path: '', test: '.isHeadEndItemNotInOverflow'}]}">
+        <title>
+            <ShellTitle id="shellTitle" text="{/title}" />
+        </title>
+        <appTitle>
+            <ShellAppTitle
+                id="shellAppTitle"
+                text="{/application/title}"
+                tooltip="{i18n>shellNavMenu_openMenuTooltip}" />
+        </appTitle>
+    </ShellHeader>
+</core:FragmentDefinition>

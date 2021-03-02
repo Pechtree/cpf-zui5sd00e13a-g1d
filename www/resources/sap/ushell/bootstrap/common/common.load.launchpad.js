@@ -1,0 +1,1 @@
+sap.ui.define(["./common.set.launch.icons"],function(s){"use strict";return l;function l(d){s();sap.ui.require(["sap/ushell/iconfonts","sap/ushell/services/AppConfiguration"],function(I,C){window.sap.ushell.Container.createRenderer(null,true).then(function(c){c.placeAt(d||"canvas","only");});I.registerFiori2IconFont();});}});

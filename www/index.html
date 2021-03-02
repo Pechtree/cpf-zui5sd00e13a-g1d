@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script type="text/javascript" src="cordova.js"></script>
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-xx-bindingSyntax="complex"
+				data-sap-ui-libs="sap.m,sap.ui.layout"
+				data-sap-ui-language="TH"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+		<script>				
+				sap.ui.localResources("zui5sd00e13a");
+				var app   		= new sap.m.App({initialPage:"B101"});
+				var oCon  		= sap.ui.controller('zui5sd00e13a.OCON');
+				var oDevice  	= sap.ui.controller('zui5sd00e13a.ODEVICE');
+				var oCTX  		= oCon.getCTX();
+				
+				app.addPage(sap.ui.view({id:"B101", viewName:"zui5sd00e13a.B101", type:sap.ui.core.mvc.ViewType.JS}));
+				app.addPage(sap.ui.view({id:"B102", viewName:"zui5sd00e13a.B102", type:sap.ui.core.mvc.ViewType.JS}));
+				app.placeAt("content");
+				
+				document.addEventListener("deviceready", oDevice.onDeviceReady, false);
+				//oCon.ui5DispatchFcode("INITIALIZE");
+				
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

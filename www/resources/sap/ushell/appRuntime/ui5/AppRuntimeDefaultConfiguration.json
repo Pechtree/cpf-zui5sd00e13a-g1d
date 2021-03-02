@@ -1,0 +1,33 @@
+{
+    "services": {
+        "CrossApplicationNavigation": {
+            "module": "sap.ushell.appRuntime.ui5.services.CrossApplicationNavigation"
+        },
+        "NavTargetResolution": {
+            "module": "sap.ushell.appRuntime.ui5.services.NavTargetResolution"
+        },
+        "ShellNavigation": {
+            "module": "sap.ushell.appRuntime.ui5.services.ShellNavigation"
+        },
+        "AppConfiguration": {
+            "module": "sap.ushell.appRuntime.ui5.services.AppConfiguration"
+        },
+        "Bookmark": {
+            "module": "sap.ushell.appRuntime.ui5.services.Bookmark"
+        },
+        "LaunchPage": {
+            "module": "sap.ushell.appRuntime.ui5.services.LaunchPage"
+        },
+        "UserInfo": {
+            "module": "sap.ushell.appRuntime.ui5.services.UserInfo"
+        },
+        "AppState": {
+            "module": "sap.ushell.appRuntime.ui5.services.AppState"
+        },
+        "Ui5ComponentLoader": {
+            "config": {
+                "amendedLoading": false
+            }
+        }
+    }
+}

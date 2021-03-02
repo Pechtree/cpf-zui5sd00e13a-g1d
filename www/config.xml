@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget 
+	xmlns:gap="http://phonegap.com/ns/1.0"
+    id="peachtree.zm010cpf.rpt" 
+    version="1.1"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+  <name>
+    iLaunch RPT
+  </name>
+
+  <description>
+ 	CP Internet Launcher RPT
+  </description>
+
+  <author email="chestha@peachtree.co.th" href="http://www.peachtree.co.th">
+    Chestha Rangkarasamee
+  </author>
+
+	<icon src="cp.png" />
+
+<!--  
+    <icon src="img/icon_72x72.png"   		platform="ios" width="72" height="72" />
+    <icon src="img/icon_76x76.png"   		platform="ios" width="76" height="76" />
+    <icon src="img/icon_120x120.png" 		platform="ios" width="120" height="120" />
+    <icon src="img/icon_152x152.png" 		platform="ios" width="152" height="152" />
+    <icon src="img/icon_180x180.png" 		platform="ios" width="180" height="180" />
+    
+    <splash src="img/splash_320x480.png"   	platform="ios" width="320"  height="480" />
+  	<splash src="img/splash_640x960.png"   	platform="ios" width="640"  height="960" />
+  	<splash src="img/splash_640x1136.png"  	platform="ios" width="640"  height="1136" />
+  	<splash src="img/splash_750x1334.png"  	platform="ios" width="750"  height="1334" />
+  	<splash src="img/splash_1242x2208.png" 	platform="ios" width="1242" height="2208" />
+  	<splash src="img/splash_2208x1242.png" 	platform="ios" width="2208" height="1242" />
+  	<splash src="img/splash_768x1024.png"  	platform="ios" width="768"  height="1024" />
+  	<splash src="img/splash_1024x768.png"  	platform="ios" width="1024" height="768" />
+  	<splash src="img/splash_1536x2048.png" 	platform="ios" width="1536" height="2048" />
+  	<splash src="img/splash_2048x1536.png" 	platform="ios" width="2048" height="1536" />
+  	
+	<icon src="img/icon_48x48.png" 			platform="android" qualifier="mdpi" />
+	<icon src="img/icon_72x72.png" 			platform="android" qualifier="hdpi" />
+	<icon src="img/icon_96x96.png" 			platform="android" qualifier="xhdpi" />
+	<icon src="img/icon_144x144.png" 		platform="android" qualifier="xxhdpi" />
+	<icon src="img/icon_192x192.png" 		platform="android" qualifier="xxxhdpi" />
+
+	<splash src="img/splash_200x320.png" 	platform="android" qualifier="ldpi" />
+	<splash src="img/splash_320x480.png" 	platform="android" qualifier="mdpi" />
+	<splash src="img/splash_480x800.png" 	platform="android" qualifier="hdpi" />
+	<splash src="img/splash_720x1280.png" 	platform="android" qualifier="xhdpi" />
+	<splash src="img/splash_960x1600.png" 	platform="android" qualifier="port-xxhdpi" />
+	<splash src="img/splash_1600x960.png" 	platform="android" qualifier="land-xxhdpi" />
+	
+	-->
+	
+    <plugin name="org.apache.cordova.battery-status" 		source="npm" />
+    <plugin name="org.apache.cordova.camera" 				source="npm" />
+    <plugin name="org.apache.cordova.media-capture" 		source="npm" />
+    <plugin name="org.apache.cordova.console" 				source="npm" />
+    <plugin name="org.apache.cordova.contacts" 				source="npm" />
+    <plugin name="org.apache.cordova.device" 				source="npm" />
+    <plugin name="org.apache.cordova.device-motion" 		source="npm" />
+    <plugin name="org.apache.cordova.device-orientation" 	source="npm" />
+    <plugin name="org.apache.cordova.file" 					source="npm" />
+    <plugin name="org.apache.cordova.file-transfer" 		source="npm" />
+    <plugin name="org.apache.cordova.geolocation" 			source="npm" />
+    <plugin name="org.apache.cordova.globalization" 		source="npm" />
+    <plugin name="org.apache.cordova.inappbrowser" 			source="npm" />
+    <plugin name="org.apache.cordova.media" 				source="npm" />
+    <plugin name="org.apache.cordova.dialogs" 				source="npm" />
+    <plugin name="org.apache.cordova.network-information"	source="npm" />
+    <plugin name="org.apache.cordova.splashscreen" 			source="npm" />
+    <plugin name="org.apache.cordova.vibration" 			source="npm" />
+    
+	<plugin name="cordova-plugin-battery-status" 			source="npm" />
+	<plugin name="cordova-plugin-camera" 					source="npm" />
+	<plugin name="cordova-plugin-media-capture" 			source="npm" />
+	<plugin name="cordova-plugin-console" 					source="npm" />
+	<plugin name="cordova-plugin-contacts" 					source="npm" />
+	<plugin name="cordova-plugin-device" 					source="npm" />
+	<plugin name="cordova-plugin-device-motion" 			source="npm" />
+	<plugin name="cordova-plugin-device-orientation" 		source="npm" />
+	<plugin name="cordova-plugin-file" 						source="npm" />
+	<plugin name="cordova-plugin-file-transfer" 			source="npm" />
+	<plugin name="cordova-plugin-geolocation" 				source="npm" />
+	<plugin name="cordova-plugin-globalization" 			source="npm" />
+	<plugin name="cordova-plugin-inappbrowser" 				source="npm" />
+	<plugin name="cordova-plugin-media" 					source="npm" />
+	<plugin name="cordova-plugin-network-information" 		source="npm" />
+	<plugin name="cordova-plugin-dialogs" 					source="npm" />
+	<plugin name="cordova-plugin-splashscreen" 				source="npm" />
+	<plugin name="cordova-plugin-vibration" 				source="npm" />
+	<plugin name="cordova-plugin-whitelist" 				source="npm" /> 
+	
+	<plugin name="cordova-plugin-uniquedeviceid" 			source="npm" />
+	
+	
+    <access origin="http://cpfdv6.cpf.co.th:8000/*" />
+	<access origin="http://cpfrpt06.cpf.co.th:8002/*" />
+    <access origin="https://miorder.cpf.co.th/*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    
+
+
+</widget>
